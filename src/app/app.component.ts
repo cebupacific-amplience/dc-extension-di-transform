@@ -21,6 +21,6 @@ export class AppComponent {
 
   constructor(private sdkService: DcSdkService, private editor: EditorService, private icons: MatIconRegistry,
               private sanitizer: DomSanitizer) {
-    icons.addSvgIcon('delete', sanitizer.bypassSecurityTrustResourceUrl('./dc-extension-di-transform-v2/assets/icons/ic-asset-delete.svg'));
+    icons.addSvgIcon('delete', sanitizer.bypassSecurityTrustResourceUrl('./dc-extension-di-transform/assets/icons/ic-asset-delete.svg'));
   }
 }
