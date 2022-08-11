@@ -1,0 +1,12 @@
+@import "./core/core.scss";
+
+:host {
+  width: 100%;
+  background-color: $color-lightest-grey;
+}
+
+.amp-root__topbar {
+  &--hide {
+    margin-top: -42px;
+  }
+}

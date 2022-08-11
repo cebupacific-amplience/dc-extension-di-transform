@@ -1,0 +1,9 @@
+<ng-container *ngFor="let item of preview.previews">
+  <div
+  class="amp-di-preview__image"
+  [ngClass]="{'amp-di-preview__image--invalid': item.preferred().error && item.displayImage != null}"
+  [style.width]="item.preferred().width+'px'"
+  [style.height]="item.preferred().height+'px'" #imageContainer>
+    <!-- populated by "update containers" in the controller. -->
+  </div>
+</ng-container>

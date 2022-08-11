@@ -1,0 +1,33 @@
+@import "../../core/core.scss";
+
+:host {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  transition: 0.5s margin-right;
+  background-color: #fcfcfc;
+}
+
+.amp-di-preview__image {
+  padding: 5px;
+  background: white;
+  margin: 5px;
+  border: 1px solid $color-light-grey;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-grey;
+  font-size: 15px;
+  text-align: center;
+  overflow: hidden;
+
+  transition: 0.5s filter;
+
+  &--invalid {
+    filter: grayscale(1);
+  }
+}
